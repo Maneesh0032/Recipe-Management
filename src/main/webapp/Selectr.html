@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Recipe</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color:skyblue;
+    margin : 0;
+    padding: 0;
+    
+    height: 96vh;
+    border: 12px solid red; /* Border properties */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius : 4px;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 12px 0;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor : pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h4 {
+    
+    color: rgb(4, 0, 4);
+    padding-top:10px;
+    text-align:center;
+}
+</style>
+<style>
+h4{
+    
+    color: rgb(4, 0, 4);
+    padding-top:10px;
+    text-align:center;
+}
+.logo {
+    display: block;
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius:300px; /* Center the logo horizontally and add some bottom margin */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.secondary {
+    background-color: #555;
+}
+
+.button.secondary:hover {
+    background-color: #444;
+}
+.sidenav1 {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    /* background-image:url(https://dynamic.brandcrowd.com/asset/logo/0750841d-0ffd-4757-9229-20bc31001784/logo-search-grid-1x?logoTemplateVersion=1&v=638321759246830000);*/
+    padding-top: 20px;
+    
+}
+
+.sidenav1 a {
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    text-align:center;
+}
+
+.sidenav1 a:hover {
+    background-color : #555;
+}
+</style>
+<body>
+<div class="sidenav1">
+        <div class="container1">
+            <img class="logo" src="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png" alt="logo"><h4>FOODIEUP</h4>
+              <a href="Insertr.html">Add Recipe</a>
+              <a href="Deleter.html">Delete Recipe</a>
+              <a  href="Updater.html">Update Recipe</a>
+             <a href="Selectr.html">Search Recipe</a>
+             <a href="Signin.html">sign in</a>
+              <a href="contact.html">contact</a>
+            </div>
+    </div>
+<div class="container">
+    <h2>Select Recipe</h2>
+    <form action="Selectr" method="get">
+        <label for="rid">Recipe ID:</label>
+        <input type="text" id="rid" name="rid" required>
+        <br>
+        <label for="recipe_name">Recipe Name:</label>
+        <input type="text" id="recipe_name" name="recipe_name" required>
+        <br>
+        <input type="submit" value="Select Recipe">
+    </form>
+    </div>
+</body>
+</html>

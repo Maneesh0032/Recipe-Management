@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+     border: 10px solid red; /* Border properties */
+    border-radius: 30px;
+    height:96vh;
+}
+
+.c {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top:50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+h4 {
+    
+    color: rgb(4, 0, 4);
+    padding-top:10px;
+    text-align:center;
+}
+.logo {
+    display: block;
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius:300px; /* Center the logo horizontally and add some bottom margin */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.secondary {
+    background-color: #555;
+}
+
+.button.secondary:hover {
+    background-color: #444;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    /* background-image:url(https://dynamic.brandcrowd.com/asset/logo/0750841d-0ffd-4757-9229-20bc31001784/logo-search-grid-1x?logoTemplateVersion=1&v=638321759246830000);*/
+    padding-top: 20px;
+    
+}
+
+.sidenav a {
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    text-align:center;
+}
+
+.sidenav a:hover {
+    background-color : #555;
+}
+</style>
+
+<body>
+  <div class="sidenav">
+        <div class="container">
+            <img class="logo" src="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png" alt="logo"><h4>FOODIEUP</h4>
+              <a href="Insertr.html">Add Recipe</a>
+              <a href="Deleter.html">Delete Recipe</a>
+              <a  href="Updater.html">Update Recipe</a>
+             <a href="Selectr.html">Search Recipe</a>
+             <a href="Signin.html">sign in</a>
+              <a href="contact.html">contact</a>
+            </div>
+    </div>
+    
+<div class="c">
+ <form action="Register">
+ <h1>Sign up</h1>
+<input type="text" id="uname" placeholder="User Name*" required><br><br>
+<input type="password"  id="password" placeholder="Password" required><br><br>
+<input type="text" id="fullName" placeholder="Full Name" required><br><br>
+<label for="sign-agree-check">
+<input type="checkbox" id="sign-agree-check" required>
+    I agree to the terms and conditions...
+    
+    <span class="checkmark"></span>
+</label><br><br>
+<button type="submit" class="site-btn">Register Now</button><br>
+<p>already have an account?<a href="Login.html">Login</a></p>
+
+</form>
+</div>
+</body>
+</html>
